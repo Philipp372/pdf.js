@@ -35,7 +35,7 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
   // Support: Android, iOS
   (function checkCanvasSizeLimitation() {
     if (isIOS || isAndroid) {
-      compatibilityParams.maxCanvasPixels = 5242880;
+      compatibilityParams.maxCanvasPixels = 4096*4096;
     }
   })();
 }
